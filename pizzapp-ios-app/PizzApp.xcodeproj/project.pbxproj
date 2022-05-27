@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A426B111475B0E7CD7A831C7 /* Pods_PizzApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD47D72FCACD59BC2C5DA238 /* Pods_PizzApp.framework */; };
 		FAD319B028006F970096EA95 /* PizzAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD319AF28006F970096EA95 /* PizzAppApp.swift */; };
 		FAD319B228006F970096EA95 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD319B128006F970096EA95 /* ContentView.swift */; };
 		FAD319B428006F9A0096EA95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD319B328006F9A0096EA95 /* Assets.xcassets */; };
@@ -14,6 +15,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3257E44FBC440FB1236A54D9 /* Pods-PizzApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PizzApp.release.xcconfig"; path = "Target Support Files/Pods-PizzApp/Pods-PizzApp.release.xcconfig"; sourceTree = "<group>"; };
+		CD47D72FCACD59BC2C5DA238 /* Pods_PizzApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PizzApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEBBEFF86D32D07883FB4978 /* Pods-PizzApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PizzApp.debug.xcconfig"; path = "Target Support Files/Pods-PizzApp/Pods-PizzApp.debug.xcconfig"; sourceTree = "<group>"; };
 		FAD319AC28006F970096EA95 /* PizzApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PizzApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD319AF28006F970096EA95 /* PizzAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzAppApp.swift; sourceTree = "<group>"; };
 		FAD319B128006F970096EA95 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,17 +30,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A426B111475B0E7CD7A831C7 /* Pods_PizzApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		162F739C84E9D78C0AE86AF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CEBBEFF86D32D07883FB4978 /* Pods-PizzApp.debug.xcconfig */,
+				3257E44FBC440FB1236A54D9 /* Pods-PizzApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		63B5FFC299986B2C482F5601 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD47D72FCACD59BC2C5DA238 /* Pods_PizzApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FAD319A328006F970096EA95 = {
 			isa = PBXGroup;
 			children = (
 				FAD319AE28006F970096EA95 /* PizzApp */,
 				FAD319AD28006F970096EA95 /* Products */,
+				162F739C84E9D78C0AE86AF5 /* Pods */,
+				63B5FFC299986B2C482F5601 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAD319BA28006F9A0096EA95 /* Build configuration list for PBXNativeTarget "PizzApp" */;
 			buildPhases = (
+				820A76390ED08E9A8BDF953E /* [CP] Check Pods Manifest.lock */,
 				FAD319A828006F970096EA95 /* Sources */,
 				FAD319A928006F970096EA95 /* Frameworks */,
 				FAD319AA28006F970096EA95 /* Resources */,
@@ -131,6 +157,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		820A76390ED08E9A8BDF953E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PizzApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FAD319A828006F970096EA95 /* Sources */ = {
@@ -263,6 +314,7 @@
 		};
 		FAD319BB28006F9A0096EA95 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEBBEFF86D32D07883FB4978 /* Pods-PizzApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -291,6 +343,7 @@
 		};
 		FAD319BC28006F9A0096EA95 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3257E44FBC440FB1236A54D9 /* Pods-PizzApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

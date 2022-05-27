@@ -1,0 +1,16 @@
+PODS:
+  - pizzapp_shared (0.1.0)
+
+DEPENDENCIES:
+  - pizzapp_shared (from `../pizzapp-shared`)
+
+EXTERNAL SOURCES:
+  pizzapp_shared:
+    :path: "../pizzapp-shared"
+
+SPEC CHECKSUMS:
+  pizzapp_shared: e93e22b9c59a6a85998ef7440f0732e98adbce7a
+
+PODFILE CHECKSUM: 09318e9da935dd8ff8702d4d6cff854c7b6befad
+
+COCOAPODS: 1.11.3
