@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Android" pattern="file[pizzapp.pizzapp-android-app]:*/||file[pizzapp.pizzapp-shared]:src/androidMain/*/||file[pizzapp.pizzapp-shared]:src/androidTest/*/" />
+</component>

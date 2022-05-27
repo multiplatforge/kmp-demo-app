@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# JetBrains IDEs
+**/.idea/*
+!**/.idea/dictionaries/
+!**/.idea/scopes/
+!**/.idea/fileColors.xml
+!**/.idea/codeInsightSettings.xml
+*.iml
+
+# Android Studio
+/local.properties
+
+# Gradle
+.gradle/
+build/
+hs_err_pid*

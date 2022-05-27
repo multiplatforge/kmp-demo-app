@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="iOS" pattern="file[pizzapp]:pizzapp-ios-app/*/||file[pizzapp.pizzapp-shared]:src/iosMain/*/||file[pizzapp.pizzapp-shared.iosMain]:*/||file[pizzapp.pizzapp-shared]:src/iosTest/*/||file[pizzapp.pizzapp-shared.iosTest]:*/" />
+</component>

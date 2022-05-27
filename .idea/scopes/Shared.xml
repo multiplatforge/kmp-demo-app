@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Shared" pattern="file[pizzapp.pizzapp-shared]:*||file[pizzapp.pizzapp-shared]:src/commonMain/*/||file[pizzapp.pizzapp-shared.commonMain]:*/||file[pizzapp.pizzapp-shared]:src/commonTest/*/||file[pizzapp.pizzapp-shared.commonTest]:*/" />
+</component>
